@@ -67,6 +67,8 @@
                     if ($u[$x] == $answer[$x]) {
                         $u[$x] = 'OK';
                         $ok++;
+                    } else {
+                        $u[$x] = '-';
                     }
                 }
                 $date = date('Y-m-d H:i:s');
