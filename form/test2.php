@@ -67,12 +67,17 @@
                 );
                 $u = array('0', $_POST[q1], $_POST[q2], $_POST[q3], $_POST[q4], $_POST[q5], $_POST[q6], $_POST[q7], $_POST[q8], $_POST[q9], $_POST[q10]);
                 for ($x = 1; $x <= 10; $x++) {
-                    if ($u[$x] == $answer[$x]) {
+                    $tmp = str_replace(array("?","!",",",";",'.',' '), "", $u[$x]);
+                    $tmp=mb_strtolower($tmp);
+                    if ($tmp == mb_strtolower(str_replace(array("?","!",",",";",'.',' '), "", $answer[$x]))) {
                         $u[$x] = 'OK';
                         $ok++;
                     } else {
-                        $u[$x] = '-';
+                        $u[$x] = '---';
                     }
+                    echo strtolower($tmp);
+                    echo "\n";
+                    echo mb_strtolower(str_replace(array("?","!",",",";",'.',' '), "", $answer[$x]));
                 }
                 $date = date('Y-m-d H:i:s');
                 $percent = round($ok / 10 * 100);
