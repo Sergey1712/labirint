@@ -5,18 +5,21 @@
     <title>Команда Лабиринта</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
     <noscript>
         <link rel="stylesheet" href="assets/css/noscript.css" />
     </noscript>
-    <link href="css/reset.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/form_index.css" rel="stylesheet">
-    <link href="css/mobile.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link href="css/form_index.css" rel="stylesheet" />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link href="css/mobile.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="assets/css/main.css" rel="stylesheet">
     <style>
+        .footer{
+        all: initial;
+
+        }
         .img-left{
             width: 40%;
             height: 40%;
@@ -25,6 +28,27 @@
         img{
             border: 0px solid black;
             border-radius: 15%;
+            margin: 0 5% 0 0;
+        }
+        p{
+            margin: 0 0 0 0;
+            text-align: left;
+        }
+        ul.actions{
+            text-align: right;
+        }
+        article{
+            display: flex;
+            flex-flow: wrap;
+        }
+        @media screen and (max-width: 600px) {
+            .img-left{
+                float: inherit;
+                width: 60%;
+            }
+            p{
+                text-align: center;
+            }
         }
     </style>
 </head>
@@ -73,9 +97,14 @@
                         <h2><a href="#">Азаров Павел Николаевич</a></h2>
                     </header>
                     <div>
-                        <img src="img/azarov_edited.jpg" class="img-left">
-                        <div><p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in
-                            faucibus.Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p></div>
+                        <div class="img1">
+                            <img src="img/azarov_edited.jpg" class="img-left">
+                        </div>
+                        <div class="text1">
+                            <p><strong>E-mail:</strong>&nbsp;<a href="mailto: azarnoy@mail.ru">azarnoy@mail.ru</a></p>
+                            <p><strong>Тел.:</strong>&nbsp;<a href="tel:+7(4742)908388">+7-(4742)-90-83-88</a></p>
+                            <p><strong>Образование:</strong>&nbsp;высшее (учитель математики и физики)</p>
+                        </div>
                         <ul class="actions special">
                             <li><a href="test1.html" class="button">Full Story</a></li>
                         </ul>
@@ -86,15 +115,22 @@
 
                 <article>
                     <header>
-                        <span class="date">April 24, 2017</span>
-                        <h2><a href="test1.html">Ipsum faucibus</a></h2>
+                        <span class="date">Основатель</span>
+                        <h2><a href="#">Азаров Павел Николаевич</a></h2>
                     </header>
-                    <a href="test1.html" class="image fit"><img src="img/online.jpg" alt="" /></a>
-                    <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque
-                        venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-                    <ul class="actions special">
-                        <li><a href="#" class="button">Full Story</a></li>
-                    </ul>
+                    <div>
+                        <div class="img2">
+                            <img src="img/azarov_edited.jpg" class="img-left">
+                        </div>
+                        <div class="text2">
+                            <p><strong>E-mail:</strong>&nbsp;<a href="mailto: azarnoy@mail.ru">azarnoy@mail.ru</a></p>
+                            <p><strong>Тел.:</strong>&nbsp;<a href="tel:+7(4742)908388">+7-(4742)-90-83-88</a></p>
+                            <p><strong>Образование:</strong>&nbsp;высшее (учитель математики и физики)</p>
+                        </div>
+                        <ul class="actions special">
+                            <li><a href="test1.html" class="button">Full Story</a></li>
+                        </ul>
+                    </div>
                 </article>
 
             </section>
@@ -107,7 +143,6 @@
 
 
 
-        <!-- Footer -->
         <footer id="footer">
             <section>
                 <form method="POST" action="form/feedback.php">
