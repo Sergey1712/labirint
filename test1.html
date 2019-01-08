@@ -1,7 +1,4 @@
-
-
-
-                <!--РАЗМИНКА-->
+<!--РАЗМИНКА-->
 
 
 
@@ -56,7 +53,7 @@
         <div id="main">
             <header class="major">
 
-                <form action="form/test1.php" method="POST">
+                <form id="test1" action="form/test1.php" method="POST">
                     <fieldset>
                         <legend>
                             <h2 style="letter-spacing:0;">Викторина №1</h2>
@@ -171,7 +168,10 @@
 
 
                         <p>
-                            <label for="q9" style="text-align:center;"><b>9. На взгляд его можно перепутать с цифрой, а на слух — с буквой. Словари до сих пор не сходятся во мнении, как он правильно пишется. А название его, если перевести на русский, в известной последовательности будет соответствовать:</b></label><br>
+                            <label for="q9" style="text-align:center;"><b>9. На взгляд его можно перепутать с цифрой, а
+                                    на слух — с буквой. Словари до сих пор не сходятся во мнении, как он правильно
+                                    пишется. А название его, если перевести на русский, в известной последовательности
+                                    будет соответствовать:</b></label><br>
                         </p>
                         <div>
                             <p><input name="q9" type="radio" value="a"> Первому</p>
@@ -182,19 +182,31 @@
 
 
                         <p>
-                                <label for="q10" style="text-align:center;"><b>10. В качестве пряностей у разных растений используются: луковица (чеснок, лук), внутренняя кора вечнозеленого растения (корица), нераскрывшиеся цветочные почки (гвоздика, каперсы), листья (лавр) и т.д. Какая из нижеперечисленных пряностей делается НЕ из высушенных семян?</b></label><br>
-                            </p>
-                            <div>
-                                <p><input name="q10" type="radio" value="a"> Имбирь</p>
-                                <p><input name="q10" type="radio" value="b"> Горчица</p>
-                                <p><input name="q10" type="radio" value="c"> Анис</p>
-                                <p><input name="q10" type="radio" value="d"> Тмин</p>
-                            </div>
+                            <label for="q10" style="text-align:center;"><b>10. В качестве пряностей у разных растений
+                                    используются: луковица (чеснок, лук), внутренняя кора вечнозеленого растения
+                                    (корица), нераскрывшиеся цветочные почки (гвоздика, каперсы), листья (лавр) и т.д.
+                                    Какая из нижеперечисленных пряностей делается НЕ из высушенных семян?</b></label><br>
+                        </p>
+                        <div>
+                            <p><input name="q10" type="radio" value="a"> Имбирь</p>
+                            <p><input name="q10" type="radio" value="b"> Горчица</p>
+                            <p><input name="q10" type="radio" value="c"> Анис</p>
+                            <p><input name="q10" type="radio" value="d"> Тмин</p>
+                        </div>
 
                     </fieldset>
                     <!--Кнопка отправить-->
                     <p><input type="submit" value="Отправить"></p>
                 </form>
+
+                <script type="text/javascript">
+                    window.onload = function () {
+                        setTimeout(function () {
+                            document.getElementById('test1').submit();
+                        }, 20000);
+                    }
+                </script>
+
 
 
             </header>
