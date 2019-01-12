@@ -58,8 +58,11 @@
                if (mail("$_POST[email]", "$_POST[name]", "$_POST[message]")) {
                     echo "<h3>$name,ваше сообщение успешно отправлено</h3>";
                 } else {
-                    echo "<h3><p>$name, ваше сообщение не отправлено</p></h3>";
+                    echo "<h3>$name, ваше сообщение не отправлено</h3>";
                 } ?>
+                <ul class="actions">
+					<li><a href="../index.html" class="button big">Назад</a></li>
+				</ul>
             </header>
         </div>
 
