@@ -8,16 +8,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <noscript>
-		<link rel="stylesheet" href="../assets/css/noscript.css" />
+		<link rel="stylesheet" href="/assets/css/noscript.css" />
 	</noscript>
-    <link href="../css/reset.css" rel="stylesheet">
-    <link href="../css/mobile.css" rel="stylesheet">
-    <link href="../assets/css/main.css" rel="stylesheet">
-    <link href="../assets/css/font-awesome.min.css" rel="stylesheet">
-	<link href="../assets/css/noscript.css" rel="stylesheet">
-    <link href="../css/form-test.css" rel="stylesheet">
-    <link href="../css/style.css" rel="stylesheet">
-	<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link href="/css/reset.css" rel="stylesheet">
+    <link href="/css/mobile.css" rel="stylesheet">
+    <link href="/assets/css/main.css" rel="stylesheet">
+    <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+	<link href="/assets/css/noscript.css" rel="stylesheet">
+    <link href="/css/form-test.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
@@ -28,17 +28,17 @@
 
         <!-- Header -->
         <header id="header">
-            <a href="../index.html" class="logo">Лабиринт</a>
+            <a href="/index.html" class="logo">Лабиринт</a>
         </header>
 
         <!-- Nav -->
         <nav id="nav">
 				<ul class="links">
-						<li><a href="../index.html">Лабиринт</a></li>
-						<li><a href="../history.html">История Лабиринта</a></li>
-						<li><a href="../team.html">Команда</a></li>
-						<li><a href="../turnir.html">Турниры</a></li>
-						<li class="active"><a href="../online.html">Онлайн-Викторины</a></li>
+						<li><a href="/index.html">Лабиринт</a></li>
+						<li><a href="/history.html">История Лабиринта</a></li>
+						<li><a href="/team.html">Команда</a></li>
+						<li><a href="/turnir.html">Турниры</a></li>
+						<li class="active"><a href="/online.html">Онлайн-Викторины</a></li>
 					</ul>
 				<ul class="icons">
 					<li><a href="https://vk.com/labirint4836164024" target="_blank" class="icon fa-vk"><span class="label">Вк</span></a></li>
@@ -79,9 +79,9 @@
                 ?>
                 <?php echo "<h3>$username, вы правильно ответили на $percent% вопросов</h3>";
                 if ($percent < 70) {
-                    echo '<a href="https://labirint.h1n.ru/test1.html">Попробуйте пройти тест ещё раз</a>';
+                    echo '<a href="https://labirint.h1n.ru/quiz/test1.html">Попробуйте пройти тест ещё раз</a>';
                 } else {
-                    echo '<a href="https://labirint.h1n.ru/test2.html">Пройдите следующую викторину</a>';
+                    echo '<a href="https://labirint.h1n.ru/quiz/test2.html">Пройдите следующую викторину</a>';
                 }
                 ?>
 
@@ -101,12 +101,12 @@
     </div>
 
     <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/skel.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/jquery.scrollex.min.js"></script>
+    <script src="/assets/js/jquery.scrolly.min.js"></script>
+    <script src="/assets/js/skel.min.js"></script>
+    <script src="/assets/js/util.js"></script>
+    <script src="/assets/js/main.js"></script>
 
 </body>
 

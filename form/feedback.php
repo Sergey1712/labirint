@@ -7,9 +7,9 @@
     <title>Обратная связь</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
     <noscript>
-        <link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+        <link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
     <style>
         body{
             background-image:url("labirint.h1n.ru/images/bg.jpg");
@@ -30,17 +30,17 @@
 
         <!-- Header -->
         <header id="header">
-            <a href="../index.html" class="logo">Лабиринт</a>
+            <a href="/index.html" class="logo">Лабиринт</a>
         </header>
 
         <!-- Nav -->
         <nav id="nav">
             <ul class="links">
-                <li><a href="../index.html">Лабиринт</a></li>
-                <li><a href="../history.html">История Лабиринта</a></li>
-                <li><a href="../team.html">Команда</a></li>
-                <li><a href="../turnir.html">Турниры</a></li>
-                <li><a href="../online.html">Онлайн-Викторины</a></li>
+                <li><a href="/index.html">Лабиринт</a></li>
+                <li><a href="/history.html">История Лабиринта</a></li>
+                <li><a href="/team.html">Команда</a></li>
+                <li><a href="/turnir.html">Турниры</a></li>
+                <li><a href="/online.html">Онлайн-Викторины</a></li>
                 <li class="action"><a href="#">Обратная связь</a></li>
             </ul>
             <ul class="icons">
@@ -61,7 +61,7 @@
                     echo "<h3>$name, ваше сообщение не отправлено</h3>";
                 } ?>
                 <ul class="actions">
-					<li><a href="../index.html" class="button big">Назад</a></li>
+					<li><a href="/index.html" class="button big">Назад</a></li>
 				</ul>
             </header>
         </div>
