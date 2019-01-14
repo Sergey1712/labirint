@@ -29,7 +29,7 @@ input[type="text"] {
     width: 30%;
     height: 30px;
     min-width: 200px;
-    max-width: 300px;
+    max-width: 100%;
     color: #5e5e5e;
     margin: 0 10px;
     text-align: center;
