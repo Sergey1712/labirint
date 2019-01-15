@@ -49,6 +49,9 @@
         <div id="main">
             <header class="major">
 
+                <div id="status">
+
+                </div>
                 <form id="test1" action="/form/test1.php" method="POST">
                     <fieldset>
                         <legend>
@@ -195,15 +198,21 @@
                     <p><input type="submit" value="Отправить"></p>
                 </form>
 
-                <!--                Скрипт для отправки по времени
-                    <script>
-                    window.onload = function () {
-                        setTimeout(function () {
+                <script type="text/javascript">
+                    var secs = sessionStorage.getItem('secs') || 10;
+                    var timer = setInterval(function () {
+                        var element = document.getElementById("status");
+                        element.innerHTML = "<h2>У вас осталось <b>" + secs + "</b> секунд до закрытия вопроса</h2>";
+                        if (secs < 1) {
+                            clearInterval(timer);
+                            sessionStorage.clear();
                             document.getElementById('test1').submit();
-                        }, 80000);
-                    }
+                        }
+                        else {
+                            sessionStorage.setItem('secs', --secs);
+                        }
+                    }, 1000)
                 </script>
-            -->
 
 
 
